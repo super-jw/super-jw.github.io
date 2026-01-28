@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Self-paced Contrastive Learning with Hybrid Memory for Domain Adaptive Object Re-ID</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="Domain adaptive object re-ID aims to transfer the learned knowledge from the labeled source domain to the unlabeled target domain to tackle the open-class re-identification problems. Although state-of-the-art pseudo-label-based methods have achieved great success, they did not make full use of all valuable information because of the domain gap and unsatisfying clustering performance. To solve these problems, we propose a novel self-paced contrastive learning framework with hybrid memory. The hybrid memory dynamically generates source-domain class-level, target-domain cluster-level and un-clustered instance-level supervisory signals for learning feature representations. Different from the conventional contrastive learning strategy, the proposed framework jointly distinguishes source-domain classes, and target-domain clusters and un-clustered instances. Most importantly, the proposed self-paced method gradually creates more reliable clusters to refine the hybrid memory and learning targets, and is shown to be the key to our outstanding performance. Our method outperforms state-of-the-arts on multiple domain adaptation tasks of object re-ID and even boosts the performance on the source domain without any extra annotations. Our generalized version on unsupervised object re-ID surpasses state-of-the-art algorithms by considerable 16.7% and 7.9% on Market-1501 and MSMT17 benchmarks.">
+<meta name="keywords" content="Unsupervised Learning; Unsupervised Domain Adaptation, Object Re-identification; Computer Vision; Deep Learning">
+<link rel="author" href="https://yxgeee.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./files/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./files/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./files/iconize.css">
+<script async="" src="./files/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+
+      <div class="section head">
+        <h1>Self-paced Contrastive Learning with Hybrid Memory</h1>
+        <h1>for Domain Adaptive Object Re-ID</h1>
+
+	<div class="authors">
+	  <a href="https://yxgeee.github.io/">Yixiao Ge</a><sup></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="http://home.ustc.edu.cn/~zhufengx/">Feng Zhu</a><sup></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://scholar.google.com/citations?user=-Wpd7FcAAAAJ&hl=en">Dapeng Chen</a><sup></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://zhaorui.xyz/">Rui Zhao</a><sup></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.ee.cuhk.edu.hk/~hsli/">Hongsheng Li</a><sup></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
+	<div class="affiliations">
+	  <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory, The Chinese University of Hong Kong</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
+  <div class="venue">Conference on Neural Information Processing Systems (<a href="https://nips.cc/" target="_blank">NeurIPS</a>) 2020 </div>
+
+    </div>
+
+
+    <center><img src="./spcl/framework.png" border="0" width="80%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+    Domain adaptive object re-ID aims to transfer the learned knowledge from the labeled source domain to the unlabeled target domain to tackle the open-class re-identification problems. Although state-of-the-art pseudo-label-based methods have achieved great success, they did not make full use of all valuable information because of the domain gap and unsatisfying clustering performance. To solve these problems, we propose a novel self-paced contrastive learning framework with hybrid memory. The hybrid memory dynamically generates source-domain class-level, target-domain cluster-level and un-clustered instance-level supervisory signals for learning feature representations. Different from the conventional contrastive learning strategy, the proposed framework jointly distinguishes source-domain classes, and target-domain clusters and un-clustered instances. Most importantly, the proposed self-paced method gradually creates more reliable clusters to refine the hybrid memory and learning targets, and is shown to be the key to our outstanding performance. Our method outperforms state-of-the-arts on multiple domain adaptation tasks of object re-ID and even boosts the performance on the source domain without any extra annotations. Our generalized version on unsupervised object re-ID surpasses state-of-the-art algorithms by considerable <b>16.7%</b> and <b>7.9%</b> on Market-1501 and MSMT17 benchmarks.
+</p>
+      </div>
+
+
+<div class="section demo">
+	<h2>Public Video
+    (Source:
+    <a href="https://www.youtube.com/embed/77prEdxBuLE" target="search_iframe">YouTube</a> /
+    <a href="https://player.bilibili.com/player.html?aid=970104264&cid=248579993&as_wide=1" target="search_iframe">bilibili</a>)
+  </h2>
+
+	<br>
+	<center>
+	  <iframe id="video" width="810" height="480" src="https://www.youtube.com/embed/77prEdxBuLE" name="search_iframe" frameborder="0" allowfullscreen></iframe>
+  <!-- </video> -->
+	</center>
+  <br>
+
+</div>
+
+<br>
+
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://arxiv.org/abs/2006.02713" target="_blank" class="imageLink"><img src="./spcl/paper.png"></a><br>
+		  <a href="https://arxiv.org/abs/2006.02713" target="_blank">Paper</a>
+		</div>
+	      </li>
+
+        <li class="grid">
+        <div class="griditem">
+        <a href="../files/spcl_slides.pdf" target="_blank" class="imageLink"><img src="./spcl/cover.png"></a><br>
+        <a href="../files/spcl_slides.pdf" target="_blank">Slides</a>
+        </div>
+        </li>
+
+        <li class="grid">
+        <div class="griditem">
+        <a href="../files/spcl_poster.pdf" target="_blank" class="imageLink"><img src="./spcl/poster.png"></a><br>
+        <a href="../files/spcl_poster.pdf" target="_blank">Poster</a>
+        </div>
+        </li>
+
+        <li class="grid">
+      <div class="griditem">
+  <a href="https://github.com/yxgeee/SpCL" target="_blank" class="imageLink"><img src="./files/code.png"></a><br>
+    <a href="https://github.com/yxgeee/SpCL" target="_blank">Code and Models</a>
+  </div>
+      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+<!-- <div class="section presentation">
+	<h2>Presentation</h2>
+	<center>
+	  <ul> -->
+            <!-- <li class="grid">
+	      <div class="griditem">
+		<a href="https://www.youtube.com/watch?v=BQZ5xKd5kis&t=1361" target="_blank" class="imageLink"><img src="./compounddomain/video.png"></a><br>
+		  <a href="https://www.youtube.com/watch?v=BQZ5xKd5kis&t=1361" target="_blank">Video Recording</a>
+		</div>
+	      </li> -->
+
+
+	    <!-- </ul>
+	    </center>
+	    </div>
+
+<br> -->
+
+<!-- <div class="section code">
+	<h2>Code and Models</h2>
+	<center>
+	  <ul>
+
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://github.com/yxgeee/MMT" target="_blank" class="imageLink"><img src="./mmt/code.png"></a><br>
+		  <a href="https://github.com/yxgeee/MMT" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br> -->
+
+<!-- <div class="section data">
+	<h2>Datasets</h2>
+	<br>
+	<center>
+      	<a href="https://drive.google.com/open?id=1j7Nkfe6ZhzKFXePHdsseeeGI877Xu1yf" target="_blank" class="imageLink"><img src="./compounddomain/dataset.png" border="2" width="70%"></a><br>
+      	<a href="https://drive.google.com/open?id=1j7Nkfe6ZhzKFXePHdsseeeGI877Xu1yf" target="_blank">Open Long-Tailed Datasets</a>
+    </center>
+    </div>
+
+<br>-->
+
+<div class="section blog">
+	<h2>Blog</h2>
+	<center>
+	  <ul>
+
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://zhuanlan.zhihu.com/p/269112325" target="_blank" class="imageLink"><img src="./files/Zhihu_logo.png"></a><br>
+		  <a href="https://zhuanlan.zhihu.com/p/269112325" target="_blank">Zhihu Blog (in Chinese)</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{ge2020self,
+    title={Self-paced Contrastive Learning with Hybrid Memory for Domain Adaptive Object Re-ID},
+    author={Yixiao Ge and Feng Zhu and Dapeng Chen and Rui Zhao and Hongsheng Li},
+    booktitle={Advances in Neural Information Processing Systems},
+    year={2020}
+}</pre>
+	  </div>
+      </div>
+
+</body></html>

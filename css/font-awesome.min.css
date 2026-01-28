@@ -1,0 +1,7 @@
+.css-rainbow-text {
+    background: linear-gradient(to right, violet, indigo, blue, green, orange, red);
+    color: #0000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+}
