@@ -1,0 +1,62 @@
+.section-more {
+  float: right;
+  margin-top: 0.15rem;
+  color: #54b689;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.resume-intro .section-more {
+  float: none;
+  display: block;
+  width: fit-content;
+  margin-top: 0.65rem;
+}
+
+.news-scroll-area {
+  height: 145px;
+  overflow-y: auto;
+  padding-right: 0.6rem;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+
+.news-scroll-area:hover,
+.news-scroll-area:focus,
+.news-scroll-area:focus-within {
+  scrollbar-width: thin;
+  scrollbar-color: #a9beb4 transparent;
+}
+
+.news-scroll-area::-webkit-scrollbar { width: 0; }
+.news-scroll-area:hover::-webkit-scrollbar,
+.news-scroll-area:focus::-webkit-scrollbar,
+.news-scroll-area:focus-within::-webkit-scrollbar { width: 7px; }
+.news-scroll-area::-webkit-scrollbar-track { background: transparent; }
+.news-scroll-area::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background-clip: content-box;
+}
+
+.news-scroll-area:hover::-webkit-scrollbar-thumb,
+.news-scroll-area:focus::-webkit-scrollbar-thumb,
+.news-scroll-area:focus-within::-webkit-scrollbar-thumb {
+  background: #a9beb4;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.news-scroll-area::-webkit-scrollbar-thumb:hover {
+  background: #6f9f88;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+@media (max-width: 575px) {
+  .section-more { float: none; display: block; margin-top: 0.35rem; }
+}
