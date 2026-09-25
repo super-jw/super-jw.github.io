@@ -57,6 +57,29 @@
   background-clip: content-box;
 }
 
+.publication-numbered-list {
+  list-style: none;
+  padding-left: 2.5rem;
+}
+
+.publication-numbered-list > li {
+  position: relative;
+}
+
+.publication-numbered-list > li::before {
+  content: "[" counter(list-item) "].";
+  position: absolute;
+  top: 0;
+  left: -2.5rem;
+  display: inline-block;
+  border: 0;
+  background: transparent;
+  color: #2f6f56;
+  font-size: 0.82rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
 @media (max-width: 575px) {
   .section-more { float: none; display: block; margin-top: 0.35rem; }
 }
