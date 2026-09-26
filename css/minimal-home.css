@@ -58,16 +58,20 @@
 }
 
 .publication-numbered-list {
-  list-style: none;
+  list-style: decimal outside;
   padding-left: 2.5rem;
+}
+
+.publication-numbered-list.numbering-ready {
+  list-style: none;
 }
 
 .publication-numbered-list > li {
   position: relative;
 }
 
-.publication-numbered-list > li::before {
-  content: "[" counter(list-item) "].";
+.publication-numbered-list.numbering-ready > li::before {
+  content: "[" attr(data-publication-number) "].";
   position: absolute;
   top: 0;
   left: -2.5rem;
